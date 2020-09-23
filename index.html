@@ -21,23 +21,16 @@
 
     <div class = "container-fluid">
         <div class="row">
-            <div id = "search-bar" class="col-lg-3">
+            <div id="search" class="col-lg-3">
                 <form class="form-inline" id="newForm">
-                    <div class="form-group mb-2">
-                      <h4>Search:</h4>
-                    </div>
                     <div class="form-group mx-sm-3 mb-2">
                       <label for="inputPassword2" class="sr-only"></label>
-                      <input id="currentCityInput" class="form-control" placeholder="currentCity">
+                      <input id="currentCityInput" class="form-control" placeholder="Search City">
                     </div>
                     <button type="submit" id="searchBtn" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>
-
                 </form>
-
                 <div id = "history" class="btn-group-vertical"></div>
             </div>
-            
-            <!-- information section -->
             <div class="col-lg-9">
                 <div class="jumbotron">
                     <div>
@@ -53,18 +46,33 @@
                 <div>
                     <h3>5 day forecast</h3>
                     <!-- weather forecast card -->
-                    <div id="forecast" class="card-deck"></div>
+                    <div id="weatherData" class="card-deck"></div>
  
                 </div>
 
             </div>
         </div>
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-          <small>Copyright ® 2020 All Rights Reserved to M.Arafat</small>
+    <footer class="footer p-t-1">
+        <div class="container1">
+            <div class="pull-right">
+                <nav class="navbar" style="background:transparent"></nav>
+                </nav>
+              </div>
+              <div id="icons">
+                <br>
+                <br>
+            <a href="https://www.facebook.com/mohammed.arafat.338211"><i class="fa fa-facebook-official fa-2x"></i></a>
+            <a href="https://moharafat.wordpress.com/"><i class="fa fa-wordpress fa-2x"></i></a>
+            <a href="https://twitter.com/moharafat92"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://github.com/Mohammed-19992"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/mohammed-arafat1992/"><i class="fa fa-linkedin fa-2x"></i></a>
+              </div>
+              <br>
+            <h5 id="h5">Copyright © Mohammed Arafat 2020<h5>
+              <br>
         </div>
-      </footer>
+    </footer>
     </body>
     
     <script src="./script.js"></script>

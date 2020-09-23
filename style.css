@@ -4,15 +4,6 @@ html, body, .row, .container-fluid {
     height: 100%;
 }
 
-.jumbotron {
-    line-height: 2.5;
-    background-color: white;
-    border: 1px solid lightgrey;
-    margin-top: 24px;
-    padding-top: 20px;
-    color: #5A6268;
-}
-
 #nav {
     text-align: center;
     background-color: #283747;
@@ -21,46 +12,38 @@ html, body, .row, .container-fluid {
     font-style: bold;
 }
 
-.city{
-    font-size: 36px;
-    font-weight: 500;
+.jumbotron {
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin-top: 24px;
+    padding-top: 20px;
+    color: black;
 }
-#search-bar{
-    background-color: #F8F9FA;
+
+#search{
+    background-color: #5F9EA0;
     height: 100% ;
 }
 
+.currentCity{
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .card-deck .card{
-    background-color:#007BFF;
+    background-color: grey;
     color:white;
-    padding: 10px;
-}
-
-.favorable{
-    background-color: #28A745;
-    color:white;
-    padding: 8px;
-}
-
-.moderate{
-    background-color: #FFC108;
-    color:white;
-    padding: 8px;
-}
-
-.severe{
-    background-color: #DC3545;
-    color:white;
-    padding: 8px;
+    padding: 12px;
 }
 
 .cityButtons{
-    background-color: white;
-    border: 1px solid lightgrey;
+    background-color:grey;
+    border: 1px solid black;
     text-align: left;
-    color: #5A6268;
+    color: black;
     padding: 10px;
-
+    font-style:italic;
 }
 
 #history{
@@ -72,7 +55,11 @@ html, body, .row, .container-fluid {
     left: -15px;
 }
 
-#sticky-footer {
-    flex-shrink: none;
-    margin: 40px,
+footer {
+    background-color:black;
+  }
+
+  #h5 {
+    color: white;
+    text-align: center;
   }
