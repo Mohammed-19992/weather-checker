@@ -63,3 +63,21 @@ footer {
     color: white;
     text-align: center;
   }
+
+  .normal{
+      color: black;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.mild{
+    color: black;
+    background-color: orange;
+    padding: 10px;
+}
+
+.hot{
+    color: black;
+    background-color: #DC3545;
+    padding: 8px;
+}

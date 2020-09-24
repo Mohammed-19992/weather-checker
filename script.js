@@ -99,8 +99,36 @@ $(document).ready(function() {
             $(".temperature").text("Temperature:  " + temprature + " °F"); 
             $(".humidity").text("Humidity:  "+ response.main.humidity + "%");
             $(".wind-speed").text("Wind speed:  "+ response.wind.speed + "MPH");      
-        })
+
+               //function of the Ultraviolet index
+
+            var lat = response.coord.lat;
+            var lon = response.coord.lon;
+            var uvIndex = function(lat, lon){
+            var UltravioletQueryURL = "http://api.openweathermap.org/data/2.5/uvi?appid="+ api +"&lat="+ lat +"&lon="+ lon;
+            
+        $.ajax({
+            url: UltravioletQueryURL,
+            method: "GET"
+            }).then(function(response) {
+                var ultraVioletValue = response.value;
+                var ultraVioletDegree = $("<span>").attr("id", "ultraVioletDegree").addClass("badge");
+                ultraVioletDegree.text(ultraVioletValue );
+                 if (ultraVioletValue  <= 2){
+                    ultraVioletDegreeaddClass("normal");
+                }else if (ultraVioletValue  >=3 && ultraVioletValue  <=7){
+                    ultraVioletDegree.addClass("mild");
+                }else{
+                    ultraVioletDegree.addClass("hot");
+                }
+                 $(".uv-index").text("UV Index:  " );
+                $(".uv-index").append(ultraVioletDegree);
+             })
     }
+    uvIndex(lat,lon);
+  
+})
+}
 
 
     //function that handles the history buttons event
